@@ -1,0 +1,25 @@
+@function rem($px) {
+	@return $px / 16px + 0rem;
+}
+//responsive
+@function tablet($px) {
+	@return $px / 15px + 0rem;
+}
+@function phone($px) {
+	@return $px / 12px + 0rem;
+}
+@function mobile($px) {
+	@return $px / 10px + 0rem;
+}
+
+
+%clearfix{
+	&:after, &:before {
+		content: "";
+		display: table;
+	}
+
+	&:after {
+		clear: both;
+	}
+}
