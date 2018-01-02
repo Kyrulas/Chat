@@ -9,15 +9,13 @@ html {
   -ms-text-size-adjust: 100%;
   /* 2 */
   -webkit-text-size-adjust: 100%;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
  * Remove the margin in all browsers (opinionated).
  */
 body {
-  margin: 0;
-}
+  margin: 0; }
 
 /* HTML5 display definitions
    ========================================================================== */
@@ -39,8 +37,7 @@ nav,
 section,
 summary {
   /* 1 */
-  display: block;
-}
+  display: block; }
 
 /**
  * Add the correct display in IE 9-.
@@ -49,23 +46,20 @@ audio,
 canvas,
 progress,
 video {
-  display: inline-block;
-}
+  display: inline-block; }
 
 /**
  * Add the correct display in iOS 4-7.
  */
 audio:not([controls]) {
   display: none;
-  height: 0;
-}
+  height: 0; }
 
 /**
  * Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
 progress {
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 /**
  * Add the correct display in IE 10-.
@@ -73,8 +67,7 @@ progress {
  */
 template,
 [hidden] {
-  display: none;
-}
+  display: none; }
 
 /* Links
    ========================================================================== */
@@ -87,8 +80,7 @@ a {
   /* 1 */
   -webkit-text-decoration-skip: objects;
   /* 2 */
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 /**
  * Remove the outline on focused links when they are also active or hovered
@@ -96,8 +88,7 @@ a {
  */
 a:active,
 a:hover {
-  outline-width: 0;
-}
+  outline-width: 0; }
 
 /* Text-level semantics
    ========================================================================== */
@@ -110,32 +101,29 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
+  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
  * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
  */
 b,
 strong {
-  font-weight: inherit;
-}
+  font-weight: inherit; }
 
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
 b,
 strong {
-  font-weight: bolder;
-}
+  font-weight: bolder; }
 
 /**
  * Add the correct font style in Android 4.3-.
  */
 dfn {
-  font-style: italic;
-}
+  font-style: italic; }
 
 /**
  * Correct the font size and margin on `h1` elements within `section` and
@@ -143,23 +131,20 @@ dfn {
  */
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
-}
+  margin: 0.67em 0; }
 
 /**
  * Add the correct background and color in IE 9-.
  */
 mark {
   background-color: #ff0;
-  color: #000;
-}
+  color: #000; }
 
 /**
  * Add the correct font size in all browsers.
  */
 small {
-  font-size: 80%;
-}
+  font-size: 80%; }
 
 /**
  * Prevent `sub` and `sup` elements from affecting the line height in
@@ -170,16 +155,13 @@ sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 sub {
-  bottom: -0.25em;
-}
+  bottom: -0.25em; }
 
 sup {
-  top: -0.5em;
-}
+  top: -0.5em; }
 
 /* Embedded content
    ========================================================================== */
@@ -187,15 +169,13 @@ sup {
  * Remove the border on images inside links in IE 10-.
  */
 img {
-  border-style: none;
-}
+  border-style: none; }
 
 /**
  * Hide the overflow in IE.
  */
 svg:not(:root) {
-  overflow: hidden;
-}
+  overflow: hidden; }
 
 /* Grouping content
    ========================================================================== */
@@ -210,28 +190,26 @@ samp {
   font-family: monospace, monospace;
   /* 1 */
   font-size: 1em;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
  * Add the correct margin in IE 8.
  */
 figure {
-  margin: 1em 40px;
-}
+  margin: 1em 40px; }
 
 /**
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
  */
 hr {
+  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
   overflow: visible;
-  /* 2 */
-}
+  /* 2 */ }
 
 /* Forms
    ========================================================================== */
@@ -246,15 +224,13 @@ textarea {
   font: inherit;
   /* 1 */
   margin: 0;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
  * Restore the font weight unset by the previous rule.
  */
 optgroup {
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 /**
  * Show the overflow in IE.
@@ -263,8 +239,7 @@ optgroup {
 button,
 input {
   /* 1 */
-  overflow: visible;
-}
+  overflow: visible; }
 
 /**
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
@@ -273,8 +248,7 @@ input {
 button,
 select {
   /* 1 */
-  text-transform: none;
-}
+  text-transform: none; }
 
 /**
  * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
@@ -286,8 +260,7 @@ html [type="button"],
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
  * Remove the inner border and padding in Firefox.
@@ -297,8 +270,7 @@ button::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
 [type="submit"]::-moz-focus-inner {
   border-style: none;
-  padding: 0;
-}
+  padding: 0; }
 
 /**
  * Restore the focus styles unset by the previous rule.
@@ -307,8 +279,7 @@ button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
+  outline: 1px dotted ButtonText; }
 
 /**
  * Change the border, margin, and padding in all browsers (opinionated).
@@ -316,8 +287,7 @@ button:-moz-focusring,
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-}
+  padding: 0.35em 0.625em 0.75em; }
 
 /**
  * 1. Correct the text wrapping in Edge and IE.
@@ -326,6 +296,7 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   /* 1 */
   color: inherit;
@@ -337,15 +308,13 @@ legend {
   padding: 0;
   /* 3 */
   white-space: normal;
-  /* 1 */
-}
+  /* 1 */ }
 
 /**
  * Remove the default vertical scrollbar in IE.
  */
 textarea {
-  overflow: auto;
-}
+  overflow: auto; }
 
 /**
  * 1. Add the correct box sizing in IE 10-.
@@ -353,19 +322,18 @@ textarea {
  */
 [type="checkbox"],
 [type="radio"] {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   /* 1 */
   padding: 0;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
+  height: auto; }
 
 /**
  * 1. Correct the odd appearance in Chrome and Safari.
@@ -375,24 +343,21 @@ textarea {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
  * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
  */
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
+  -webkit-appearance: none; }
 
 /**
  * Correct the text style of placeholders in Chrome, Edge, and Safari.
  */
 ::-webkit-input-placeholder {
   color: inherit;
-  opacity: 0.54;
-}
+  opacity: 0.54; }
 
 /**
  * 1. Correct the inability to style clickable types in iOS and Safari.
@@ -402,154 +367,308 @@ textarea {
   -webkit-appearance: button;
   /* 1 */
   font: inherit;
-  /* 2 */
-}
+  /* 2 */ }
 
-#chat_messages div:after, #chat_messages div:before {
+#chat_info:after, #chat_messages ul div:after, #typing_message:after, #chat_info:before, #chat_messages ul div:before, #typing_message:before {
   content: "";
-  display: table;
-}
+  display: table; }
 
-#chat_messages div:after {
-  clear: both;
-}
+#chat_info:after, #chat_messages ul div:after, #typing_message:after {
+  clear: both; }
 
 body {
   background: url(../img/background.jpg) no-repeat center top fixed;
-  background-size: cover;
-}
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 html, body, #container {
   height: 100%;
-}
+  font-size: 16px; }
+  @media screen and (max-width: 600px) {
+    html, body, #container {
+      font-size: 14px; } }
 
 #container {
-  display: -webkit-flex;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  padding: 3.75rem 25rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 3.75rem 12.5rem;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: "Lato", Arial, sans-serif;
-}
+  font-family: "Lato", Arial, sans-serif; }
+  @media screen and (max-width: 1170px) {
+    #container {
+      padding: 1.875rem 6.25rem; } }
+  @media screen and (max-width: 1025px) {
+    #container {
+      padding: 1.875rem 3.125rem; } }
+  @media screen and (max-width: 600px) {
+    #container {
+      padding: 0.625rem; } }
 
 #user_container {
   width: 30%;
   height: 100%;
   background-color: #ebebeb;
-  display: -webkit-flex;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  overflow: scroll;
-}
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow: scroll; }
 
 #search {
   width: 100%;
-  padding: 20px;
+  padding: 1.25rem;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   position: relative;
-  color: #e3e3e3;
-  font-size: 16px;
-}
+  color: #e3e3e3; }
+  @media screen and (max-width: 600px) {
+    #search {
+      padding: 0.5rem; } }
 
-#search .fa-search {
+#search span {
   position: absolute;
   top: 2.0625rem;
-  left: 2.0625rem;
-}
+  left: 2.0625rem; }
+  @media screen and (max-width: 600px) {
+    #search span {
+      top: 1.25rem;
+      left: 1.25rem; } }
 
 #search input {
   color: #a79e9e;
   width: 100%;
-  height: 45px;
-  text-indent: 35px;
-  border: 1px solid #aaa;
-  border-radius: 10px;
-  box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
-}
+  height: 2.8125rem;
+  text-indent: 2.1875rem;
+  border: 1px solid #d6d0d0;
+  outline: none;
+  border-radius: 0.625rem;
+  -webkit-box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
+  box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset; }
+
+#users {
+  padding: 0 1.25rem; }
+  @media screen and (max-width: 800px) {
+    #users {
+      padding: 0; } }
+  #users ul {
+    padding: 0;
+    margin: 0; }
+    #users ul li {
+      padding: 0.625rem 0; }
+      @media screen and (max-width: 800px) {
+        #users ul li {
+          padding: 0; } }
 
 .user {
   list-style-type: none;
-  position: relative;
-  margin: 10px;
-}
+  /*position:relative;*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+  @media screen and (max-width: 800px) {
+    .user {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
+  .user img {
+    width: 5rem;
+    height: 5rem; }
+  .user p {
+    display: inline-block;
+    color: #8d9495;
+    width: 50%;
+    padding: 0 0.625rem; }
+    @media screen and (max-width: 800px) {
+      .user p {
+        width: 100%;
+        text-align: center; } }
 
-.user img {
-  width: 80px;
-  height: 80px;
-}
-
-.user p {
-  display: inline-block;
-  vertical-align: top;
-  padding: 14px 10px;
-  color: #8d9495;
-}
+.user_img {
+  position: relative; }
 
 .online {
   position: absolute;
-  width: 15px;
-  height: 15px;
-  left: 65px;
-  top: 65px;
+  width: 0.875rem;
+  height: 0.875rem;
+  left: 4.0625rem;
+  top: 4.375rem;
   border-radius: 50%;
   background-color: #62f327;
-  border: 1px solid #fff;
-}
+  border: 1px solid #fff; }
 
 #chat_container {
+  position: relative;
   width: 70%;
   height: 100%;
   background-color: #ffffff;
   color: #8d9495;
-  padding: 30px;
-  box-sizing: border-box;
-}
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
 
-#chat_container button {
-  float: right;
-  color: #8d9495;
-  padding: 8px;
-  background-color: #fff;
-  border-radius: 5px;
-  border: 1px solid #aaa;
-}
-
-#chat_container button span {
-  color: #8d9495;
-}
+#chat_info {
+  padding: 1.875rem;
+  height: 15%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  @media screen and (max-width: 600px) {
+    #chat_info {
+      height: 10%; } }
+  #chat_info span {
+    vertical-align: -webkit-baseline-middle; }
+  #chat_info button {
+    float: right;
+    color: #8d9495;
+    padding: 0.5rem;
+    background-color: #fff;
+    border-radius: 0.3125rem;
+    border: 1px solid #aaa;
+    outline: none; }
+    #chat_info button:hover {
+      background-color: #edf3ef; }
+    #chat_info button span {
+      color: #8d9495;
+      vertical-align: baseline; }
 
 #chat_messages {
-  margin-top: 50px;
-}
+  height: 70%;
+  overflow: scroll;
+  width: 100%; }
+  @media screen and (max-width: 600px) {
+    #chat_messages {
+      height: 75%; } }
 
-#chat_messages li {
-  list-style-type: none;
-  margin-bottom: 50px;
-}
+#chat_messages ul {
+  padding: 0 1.875rem; }
+  #chat_messages ul li {
+    list-style-type: none;
+    margin-bottom: 1.875rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+  #chat_messages ul img {
+    width: 5rem;
+    height: 5rem; }
+  #chat_messages ul div {
+    width: 18.75rem;
+    min-height: 2.5rem;
+    padding: 1.25rem;
+    background-color: #bdc3c7;
+    border-radius: 0.625rem;
+    position: relative; }
+  #chat_messages ul .income div {
+    margin-left: 13%;
+    background-color: #bdc3c7; }
+  #chat_messages ul .income div:before {
+    border-right: 0 solid #bdc3c7;
+    border-left-width: 0;
+    border-right-width: 0.9375rem;
+    left: -0.875rem;
+    right: auto;
+    position: absolute;
+    top: 1.625rem;
+    border-top: 0.9375rem solid transparent;
+    border-bottom: 0.9375rem solid transparent;
+    content: " "; }
+  #chat_messages ul .outcome {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse; }
+    #chat_messages ul .outcome div {
+      margin-right: 13%;
+      background-color: #5de696; }
+    #chat_messages ul .outcome div:after {
+      position: absolute;
+      top: 1.625rem;
+      right: -0.9375rem;
+      display: inline-block;
+      border-top: 0.9375rem solid transparent;
+      border-left: 0.9375rem solid #5de696;
+      border-bottom: 0.9375rem solid transparent;
+      content: " "; }
 
-#chat_messages img {
-  width: 80px;
-  height: 80px;
-}
+#typing_status {
+  padding: 0 1.875rem; }
 
-#chat_messages .income {
-  float: left;
-}
+#typing_block {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #fff; }
+  @media screen and (max-width: 600px) {
+    #typing_block {
+      height: 13%; } }
 
-#chat_messages .outcome {
-  float: right;
-}
+#typing_message {
+  border-top: 1px solid #d6d0d0;
+  margin-top: 0.625rem;
+  padding: 0.9375rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative; }
+  #typing_message input {
+    color: #a79e9e;
+    outline: none;
+    width: 80%;
+    height: 2.8125rem;
+    text-indent: 2.1875rem;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
+    box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
+    padding-right: 2.5rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+    @media screen and (max-width: 600px) {
+      #typing_message input {
+        font-size: 12px;
+        text-indent: 0.125rem;
+        width: 70%; } }
+  #typing_message span {
+    font-size: 3.125rem;
+    vertical-align: middle; }
+    #typing_message span:hover {
+      color: #7e8480; }
 
-#chat_messages div {
-  width: 400px;
-  min-height: 40px;
-  padding: 20px;
-  background-color: #bdc3c7;
-  margin-left: 120px;
-}
+#file_input {
+  display: none; }
+
+#file_upload {
+  position: absolute;
+  right: 20%;
+  top: 1.5625rem; }
+  @media screen and (max-width: 600px) {
+    #file_upload {
+      right: 28%; } }
+  #file_upload label {
+    font-size: 1.5625rem;
+    color: #a79e9e; }
+    #file_upload label:hover {
+      color: #7e8480; }

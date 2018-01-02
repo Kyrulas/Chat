@@ -11,7 +11,7 @@
 @function mobile($px) {
 	@return $px / 10px + 0rem;
 }
-
+ 
 
 %clearfix{
 	&:after, &:before {
@@ -21,5 +21,38 @@
 
 	&:after {
 		clear: both;
+	}
+}
+
+
+@mixin desktop {
+	@media screen and (max-width: 1360px) {
+		@content;
+	}
+}
+
+@mixin laptop {
+	@media screen and (max-width: 1170px) {
+		@content;
+	}
+}
+
+
+@mixin tablets {
+	@media screen and (max-width: 1025px) {
+		@content;
+	}
+}
+
+
+@mixin smartphones {
+	@media screen and (max-width: 800px) {
+		@content;
+	}
+}
+
+@mixin mobilephones {
+	@media screen and (max-width: 600px) {
+		@content;
 	}
 }

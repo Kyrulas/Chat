@@ -20,53 +20,73 @@
 					<div id="users">
 						<ul>
 							<li class="user">
-								<span class="online"></span>
-								<a href=""><img src="img/user1.png" alt="user1"></a>
+								<div class="user_img">
+									<span class="online"></span>
+									<img src="img/user1.png" alt="user1">
+								</div>
 								<p>Brian Williamson</p>
 							</li>
 							<li class="user">
-								<span class="online"></span>
-								<a href=""><img src="img/user2.png" alt="user2"></a>
+								<div class="user_img">
+									<span class="online"></span>
+									<img src="img/user2.png" alt="user2">
+								</div>
 								<p>Tsubasa Shinoda</p>
 							</li>
 							<li class="user">
-								<span class="online"></span>
-								<a href=""><img src="img/user3.png" alt="user3"></a>
+								<div class="user_img">
+									<span class="online"></span>
+									<img src="img/user3.png" alt="user3">
+								</div>
 								<p>Hiroki Mizuno</p>
 							</li>
 							<li class="user">
-								<span class="online"></span>
-								<a href=""><img src="img/user4.png" alt="user4"></a>
+								<div class="user_img">
+									<span class="online"></span>
+									<img src="img/user4.png" alt="user4">
+								</div>
 								<p>Brienne Nielsonn</p>
 							</li>
 							<li class="user">
-								<span class="offline"></span>
-								<a href=""><img src="img/user5.png" alt="user5"></a>
+								<div class="user_img">
+									<span class="offline"></span>
+									<img src="img/user5.png" alt="user5">
+								</div>
 								<p>Mike Tynesse</p>
 							</li>
 							<li class="user">
-								<span class="offline"></span>
-								<a href=""><img src="img/user6.png" alt="user6"></a>
+								<div class="user_img">
+									<span class="offline"></span>
+									<img src="img/user6.png" alt="user6">
+								</div>
 								<p>Anne Larson</p>
 							</li>
 							<li class="user">
-								<span class="offline"></span>
-								<a href=""><img src="img/user7.png" alt="user7"></a>
+								<div class="user_img">
+									<span class="offline"></span>
+									<img src="img/user7.png" alt="user7">
+								</div>
 								<p>Ugur Akdemir</p>
 							</li>
 							<li class="user">
-								<span class="offline"></span>
-								<a href=""><img src="img/user8.png" alt="user8"></a>
+								<div class="user_img">
+									<span class="offline"></span>
+									<img src="img/user8.png" alt="user8">
+								</div>
 								<p>Lele Johnson</p>
 							</li>
 							<li class="user">
-								<span class="offline"></span>
-								<a href=""><img src="img/user9.png" alt="user9"></a>
+								<div class="user_img">
+									<span class="offline"></span>
+									<img src="img/user9.png" alt="user9">
+								</div>
 								<p>Vincet Porter</p>
 							</li>
 							<li class="user">
-								<span class="offline"></span>
-								<a href=""><img src="img/user10.png" alt="user10"></a>
+								<div class="user_img">
+									<span class="offline"></span>
+									<img src="img/user10.png" alt="user10">
+								</div>
 								<p>Emmi Burton</p>
 							</li>
 						</ul>
@@ -79,26 +99,38 @@
 					</div>
 					<div id="chat_messages">
 						<ul>
-							<li class="message">
-								<img class="income" src="img/user8.png" alt="user8">
+							<li class="message income">
+								<img class="" src="img/user8.png" alt="user8">
 								<div>Hey! Did you just send the files to me?</div>
 							</li>
-							<li class="message">
-								<img class="outcome" src="img/user11.png" alt="user11">
+							<li class="message outcome">
+								<img class="" src="img/user11.png" alt="user11">
 								<div>Oh no, I`m still working on it..</div>
 							</li>
-							<li class="message">
-								<img class="income" src="img/user8.png" alt="user8">
+							<li class="message income">
+								<img class="" src="img/user8.png" alt="user8">
 								<div>Okay..No problem.I`m going out right now, keep in touch.</div>
 							</li>
-							<li class="message">
-								<img class="outcome" src="img/user11.png" alt="user11">
+							<li class="message outcome">
+								<img class="" src="img/user11.png" alt="user11">
 								<div>I`ll send you the files when I finished. See you.
 								</div>
 							</li>
 						</ul>
 					</div>
-
+					<div id="typing_block">
+						<div id="typing_status">
+								<span>typing...</span>
+						</div>
+						<div id="typing_message">
+							<input type="text" name="typing" placeholder="Click here to type something...">
+							<div id="file_upload">
+								<input type="file" name="file_input" id="file_input">
+								<label for="file_input" class="fa fa-paperclip"></label>
+							</div>
+							<span class="fa fa-pencil-square-o"></span>
+						</div>
+					</div>
 				</div>
 		</div>
 </body>

@@ -11,14 +11,27 @@ body{
 }
 html, body, #container {
     height: 100%;
+    font-size: 16px;
+    @include mobilephones{
+		font-size: 14px;
+		}
 }
 
 #container{
 	display:flex;
 	flex-direction:row;
-	padding:rem(60px) rem(400px);
+	padding:rem(60px) rem(200px);
 	box-sizing:border-box;	
 	font-family: "Lato", Arial, sans-serif;
+	@include laptop{
+		padding:rem(30px) rem(100px);
+	} 
+	@include tablets{
+		padding:rem(30px) rem(50px);
+	} 
+	@include mobilephones{
+		padding: rem(10px);
+		}
 }
 
 #user_container{
@@ -31,99 +44,255 @@ html, body, #container {
 }
 #search{
 	width:100%;
-	padding:20px;
+	padding:rem(20px);
 	box-sizing:border-box;
 	position: relative;
 	color: #e3e3e3;
-	font-size: 16px;
+	@include mobilephones{
+		padding: rem(8px);
+		}
 }
-#search .fa-search { 
+#search span { 
   position: absolute;
   top: rem(33px);
   left: rem(33px);
+  @include mobilephones{
+		top: rem(20px);
+  		left: rem(20px);
+		}
 }
 #search input{
-	color:#a79e9e;
-	width: 100%;
-  height: 45px;
-  text-indent: 35px;
-  border: 1px solid #aaa;
-  border-radius: 10px;
+  color:#a79e9e;
+  width: 100%;
+  height: rem(45px);
+  text-indent: rem(35px);
+  border: 1px solid #d6d0d0;
+  outline: none;
+  border-radius: rem(10px);
   box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
 }
-
+#users{
+	padding: 0 rem(20px);
+	@include smartphones{
+		padding: 0;
+		}
+	ul{
+	padding: 0;
+	margin: 0;
+	li{
+		padding: rem(10px) 0; 
+		@include smartphones{
+		padding: 0;
+		}
+	   }
+	}
+}
 .user{
 	list-style-type: none;
-	position:relative;
-	margin:10px;
+	/*position:relative;*/
+	display: flex;
+	flex-direction: row;
+	@include smartphones{
+		flex-wrap: wrap;
+		justify-content: center;
+	} 
 	img{
-		width: 80px;
-		height: 80px;
+		width: rem(80px);
+		height: rem(80px);
 	}
 	p{
-		display: inline-block;
-    vertical-align: top;
-    padding:14px 10px;
+	display: inline-block;
     color:#8d9495;
+    width: 50%;
+    padding: 0 rem(10px);
+    @include smartphones{
+		width: 100%;
+		text-align: center;
+		}
 	}
+}
+.user_img{
+	position:relative;
 }
 .online{
 	position:absolute;
-	width:15px;
-	height:15px;
-	left: 65px;
-	top: 65px;
+	width:rem(14px);
+	height:rem(14px);
+	left: rem(65px);
+	top: rem(70px);
 	border-radius:50%;
 	background-color:#62f327;
 	border:1px solid #fff;
 }
-
 #chat_container{
+	position: relative;
 	width: 70%;
 	height:100%;
 	background-color:#ffffff;
 	color:#8d9495;
-	padding:30px; 
 	box-sizing: border-box;
-
-	button{
-		float:right;
-		color:#8d9495;
-		padding:8px;
-		background-color:#fff;
-		border-radius:5px;
-		border: 1px solid #aaa;
-
-		span{
-			color:#8d9495;
-
+}
+#chat_info{
+		padding: rem(30px);
+		height: 15%;
+    	box-sizing: border-box;
+		@extend %clearfix;
+		@include mobilephones{
+		height: 10%;
 		}
-	}
+		span{
+			vertical-align: -webkit-baseline-middle;
+		}
+		button{
+			float:right;
+			color:#8d9495;
+			padding:rem(8px);
+			background-color:#fff;
+			border-radius:rem(5px);
+			border: 1px solid #aaa;
+			outline: none;
+			&:hover{
+				background-color:#edf3ef;
+			}
+			span{
+				color:#8d9495;
+				vertical-align: baseline;
+			}
+		}
 }
 #chat_messages{
-	margin-top:50px;
+	height: 70%;
+	overflow: scroll;
+	width: 100%;
+	@include mobilephones{
+		height: 75%;
+	}
+}
+#chat_messages ul{
+	padding: 0 rem(30px);
 	li{
 		list-style-type: none;
-		margin-bottom: 50px;
+		margin-bottom: rem(30px);
+		display: flex;
+    	flex-direction: row;
 	}
 	img{
-		width: 80px;
-		height: 80px;
-	}
-	.income{
-		float:left;
-	}
-	.outcome{
-		float:right;
+		width: rem(80px);
+		height: rem(80px);
 	}
 	div{
 		@extend %clearfix;
-		width:400px;
-		min-height: 40px;
-		padding:20px;
+		width: rem(300px);
+		min-height: rem(40px);
+		padding:rem(20px);
 		background-color:#bdc3c7;
-		margin-left: 120px;
+		border-radius: rem(10px);
+		position: relative;
+	}
+	.income{
+		div{
+			margin-left: 13%;
+			background-color: #bdc3c7;
+		}
+		div:before{
+			border-right: 0 solid #bdc3c7;
+		    border-left-width: 0;
+		    border-right-width: rem(15px);
+		    left: rem(-14px);
+		    right: auto;
+		    position: absolute;
+    		top: rem(26px);
+    		border-top: rem(15px) solid transparent;
+    		border-bottom: rem(15px) solid transparent;
+    		content: " ";
+		}
+	
+	}
+	.outcome{
+		flex-direction: row-reverse;
+		div{
+			margin-right: 13%;
+			background-color: #5de696;;
+		}
+		div:after{
+			position: absolute;
+		    top: rem(26px);
+		    right: rem(-15px);
+		    display: inline-block;
+		    border-top: rem(15px) solid transparent;
+		    border-left: rem(15px) solid #5de696;
+		    border-bottom: rem(15px) solid transparent;
+		    content: " ";
+		}
 
 	}
 }
+#typing_status{
+	padding: 0 rem(30px);
+}
+#typing_block{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+	background-color: #fff;
+	@include mobilephones{
+		height: 13%;
+	}
+}
+#typing_message{
+	border-top: 1px solid #d6d0d0;
+	margin-top: rem(10px);
+	padding: rem(15px) 0;
+	display: flex;
+	width: 100%;
+    justify-content: space-between;
+    position: relative;
+	@extend %clearfix;
+	input{
+		color: #a79e9e;
+		outline:none;
+	    width: 80%;
+	    height: rem(45px);
+	    text-indent: rem(35px);
+	    border: 1px solid #aaa;
+	    border-radius: 10px;
+	    box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
+	    padding-right: rem(40px);
+	    box-sizing: border-box;
+	    @include mobilephones{
+		font-size: 12px;
+		text-indent: rem(2px);
+		width: 70%;
+		}
+	}
+	span{
+		font-size: rem(50px);
+		vertical-align: middle;
+		&:hover{
+			color: #7e8480;
+		}
+	}
+}
+#file_input{
+	display:none;
+}
+#file_upload{
+	position: absolute;
+	right: 20%;
+    top: rem(25px);
+    @include mobilephones{
+		right: 28%;
+    }
+	label{
+		font-size: rem(25px);
+		color:#a79e9e;
+		&:hover{
+			color: #7e8480;
+		}
+	}
+}
+
+
+
 
